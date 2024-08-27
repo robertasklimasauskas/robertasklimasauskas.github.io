@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="NegativeOrangeTest" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="orange_test"/>
+            <parameter name="usernamebad" value="kilinimi" />
+            <parameter name="passwordbad" value="88123456" />
+        </classes>
+    </test>
+    <test name="PositiveOrangeTest" enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="orange_test"/>
+            <parameter name="username" value="Admin" />
+            <parameter name="password" value="admin123" />
+            <parameter name="usernamesecond" value="Ashirkis" />
+            <parameter name="passworduser" value="admin1634" />
+        </classes>
+    </test>
+</suite>
